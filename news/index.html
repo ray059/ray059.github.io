@@ -2,11 +2,20 @@
 <html>
 <head>
   <meta charset="UTF-8">
-
-  <!-- 🔥 Intento de abrir la app -->
-  <meta http-equiv="refresh" content="0; url=intent://news/#Intent;scheme=https;package=com.raynews.app;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.raynews.app;end">
+  <title>Ray News</title>
 </head>
 <body>
-  <p>Redirigiendo a Ray News...</p>
+  <p>Abriendo en Ray News...</p>
+
+  <script>
+    // 🔥 Extraer ID desde la URL
+    const pathParts = window.location.pathname.split("/");
+    const id = pathParts[pathParts.length - 1];
+
+    // 🔥 Crear intent con ID
+    const intentUrl = `intent://news/${id}#Intent;scheme=https;package=com.raynews.app;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.raynews.app;end`;
+
+    window.location.href = intentUrl;
+  </script>
 </body>
 </html>
