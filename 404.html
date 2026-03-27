@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ray News</title>
+</head>
+<body>
+  <script>
+    // Mantiene la URL original (ej: /news/123)
+    const path = window.location.pathname;
+
+    // Redirige a la app con el path completo
+    window.location.href = "raynews://open" + path;
+  </script>
+
+  <p>Abriendo en la app...</p>
+</body>
+</html>
