@@ -2,9 +2,22 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=com.raynews.app">
+  <title>Ray News</title>
 </head>
 <body>
-  <p>Redirigiendo a Ray News...</p>
+  <p>Abriendo en la app...</p>
+
+  <script>
+    const appUrl = "raynews://open";
+    const playStoreUrl = "https://play.google.com/store/apps/details?id=com.raynews.app";
+
+    // Intentar abrir app
+    window.location.href = appUrl;
+
+    // Si no abre en 1.5 segundos → Play Store
+    setTimeout(() => {
+      window.location.href = playStoreUrl;
+    }, 1500);
+  </script>
 </body>
 </html>
