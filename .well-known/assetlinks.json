@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.raynews.app",
+      "sha256_cert_fingerprints": [
+        "54:A1:1F:B1:82:1E:C0:2E:A2:D3:5C:F7:46:53:BC:CD:AC:4C:FC:4D:81:FF:E1:06:56:C4:DC:E6:77:65:C8:56"
+      ]
+    }
+  }
+]
