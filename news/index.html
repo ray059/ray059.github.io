@@ -2,17 +2,23 @@
 <html>
 <head>
   <meta charset="UTF-8">
+
+  <!-- 🔥 Open Graph -->
+  <meta property="og:title" content="📰 Ray News">
+  <meta property="og:description" content="Lee esta noticia en Ray News">
+  <meta property="og:image" content="https://picsum.photos/600/300">
+  <meta property="og:url" content="https://ray059.github.io/news/">
+  <meta name="twitter:card" content="summary_large_image">
+
   <title>Ray News</title>
 </head>
 <body>
   <p>Abriendo en Ray News...</p>
 
   <script>
-    // 🔥 Extraer ID desde la URL
     const pathParts = window.location.pathname.split("/");
     const id = pathParts[pathParts.length - 1];
 
-    // 🔥 Crear intent con ID
     const intentUrl = `intent://news/${id}#Intent;scheme=https;package=com.raynews.app;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.raynews.app;end`;
 
     window.location.href = intentUrl;
