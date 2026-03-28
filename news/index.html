@@ -16,8 +16,8 @@
   <p>Abriendo en Ray News...</p>
 
   <script>
-    const pathParts = window.location.pathname.split("/");
-    const id = pathParts[pathParts.length - 1];
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
   
     const intentUrl = `intent://news/${id}#Intent;scheme=https;package=com.raynews.app;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.raynews.app;end`;
   
